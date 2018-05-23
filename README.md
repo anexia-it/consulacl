@@ -22,6 +22,12 @@ go get -u github.com/anexia-it/consulacl
 
 Issues in consulacl are tracked using the corresponding GitHub project's [issue tracker](https://github.com/anexia-it/consulacl/issues).
 
+## Status
+
+The current release is **v1.0.0**.
+
+Changes to consulacl are subject to [semantic versioning](http://semver.org/).
+
 ## License
 
 consulacl is licensed under the terms of the [MIT license](https://github.com/anexia-it/consulacl/blob/master/LICENSE).
