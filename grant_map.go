@@ -7,6 +7,7 @@ import (
 	"sync"
 )
 
+// GrantMap defines the type holding grant maps
 type GrantMap struct {
 	mu     sync.RWMutex
 	grants map[string]Grant

@@ -26,15 +26,15 @@ func GrantByName(name string) Grant {
 }
 
 const (
-	// Nothing allowed
+	// GrantNone is fully virtual and defines that no access should be granted
 	GrantNone = iota
-	// Deny access
+	// GrantDeny defines that access should be denied
 	GrantDeny
-	// List allowed (Consul 1.0+ with acl_enable_key_list policy configured)
+	// GrantList defines that listing is allowed (Consul 1.0+ with acl_enable_key_list policy configured)
 	GrantList
-	// Read allowed
+	// GrantRead defines that read operations are allowed
 	GrantRead
-	// Write allowed
+	// GrantWrite defines that write operations are allowed
 	GrantWrite
 
 	grantMax

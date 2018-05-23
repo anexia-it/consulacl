@@ -42,12 +42,12 @@ func (p *Policy) GetKeyring() Grant {
 	return p.keyring
 }
 
-// SetKeyring configures the operator grant
+// SetOperator configures the operator grant
 func (p *Policy) SetOperator(grant Grant) {
 	p.operator = grant
 }
 
-// GetKeyring retrieves the operator grant
+// GetOperator retrieves the operator grant
 func (p *Policy) GetOperator() Grant {
 	return p.operator
 }
@@ -112,7 +112,7 @@ func NewPolicy() *Policy {
 	return &Policy{}
 }
 
-// NewPolicy constructs a new policy and fills its state with the state represented by the provided aclPolicy
+// NewPolicyFromACLPolicy constructs a new policy and fills its state with the state represented by the provided aclPolicy
 func NewPolicyFromACLPolicy(aclPolicy *acl.Policy) *Policy {
 	p := NewPolicy()
 
